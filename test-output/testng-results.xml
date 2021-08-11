@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-08-11T20:59:56 IST" name="Default suite" finished-at="2021-08-11T21:01:02 IST" duration-ms="66281">
+    <groups>
+    </groups>
+    <test started-at="2021-08-11T20:59:56 IST" name="Default test" finished-at="2021-08-11T21:01:02 IST" duration-ms="66281">
+      <class name="blazedemo.blazedemo.v1.testcases.BookingFlow">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:blazedemo.blazedemo.v1.testcases.BookingFlow@4310d43]" started-at="2021-08-11T20:59:56 IST" name="startReport" finished-at="2021-08-11T20:59:56 IST" duration-ms="361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="init()[pri:0, instance:blazedemo.blazedemo.v1.testcases.BookingFlow@4310d43]" started-at="2021-08-11T20:59:56 IST" name="init" finished-at="2021-08-11T20:59:56 IST" depends-on-methods="blazedemo.blazedemo.v1.testcases.BaseClass.startReport" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:blazedemo.blazedemo.v1.testcases.BookingFlow@4310d43]" started-at="2021-08-11T20:59:56 IST" name="setUp" finished-at="2021-08-11T21:00:00 IST" duration-ms="3624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:blazedemo.blazedemo.v1.testcases.BookingFlow@4310d43]" started-at="2021-08-11T21:00:00 IST" name="initPage" finished-at="2021-08-11T21:00:00 IST" duration-ms="55" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="homePageWebElemetsCheck()[pri:0, instance:blazedemo.blazedemo.v1.testcases.BookingFlow@4310d43]" started-at="2021-08-11T21:00:00 IST" name="homePageWebElemetsCheck" finished-at="2021-08-11T21:00:02 IST" duration-ms="2257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageWebElemetsCheck -->
+        <test-method signature="checkNavigationToReservePage()[pri:2, instance:blazedemo.blazedemo.v1.testcases.BookingFlow@4310d43]" started-at="2021-08-11T21:00:02 IST" name="checkNavigationToReservePage" finished-at="2021-08-11T21:00:03 IST" duration-ms="927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNavigationToReservePage -->
+        <test-method signature="checkNavigationToPurchasePage()[pri:2, instance:blazedemo.blazedemo.v1.testcases.BookingFlow@4310d43]" started-at="2021-08-11T21:00:03 IST" name="checkNavigationToPurchasePage" finished-at="2021-08-11T21:00:04 IST" depends-on-methods="blazedemo.blazedemo.v1.testcases.BookingFlow.checkNavigationToReservePage" duration-ms="1282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNavigationToPurchasePage -->
+        <test-method signature="checkEnteringCustomerDetails()[pri:3, instance:blazedemo.blazedemo.v1.testcases.BookingFlow@4310d43]" started-at="2021-08-11T21:00:04 IST" name="checkEnteringCustomerDetails" finished-at="2021-08-11T21:00:06 IST" depends-on-methods="blazedemo.blazedemo.v1.testcases.BookingFlow.checkNavigationToPurchasePage" duration-ms="1729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkEnteringCustomerDetails -->
+        <test-method signature="checkForConfirmationPage()[pri:4, instance:blazedemo.blazedemo.v1.testcases.BookingFlow@4310d43]" started-at="2021-08-11T21:00:06 IST" name="checkForConfirmationPage" finished-at="2021-08-11T21:00:06 IST" depends-on-methods="blazedemo.blazedemo.v1.testcases.BookingFlow.checkEnteringCustomerDetails" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkForConfirmationPage -->
+        <test-method signature="checkNavigationAllCountries(java.lang.String,java.lang.String)[pri:5, instance:blazedemo.blazedemo.v1.testcases.BookingFlow@4310d43]" started-at="2021-08-11T21:00:06 IST" name="checkNavigationAllCountries" data-provider="getCountriesMap" finished-at="2021-08-11T21:00:07 IST" duration-ms="815" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Paris]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Buenos Aires]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNavigationAllCountries -->
+        <test-method signature="checkNavigationAllCountries(java.lang.String,java.lang.String)[pri:5, instance:blazedemo.blazedemo.v1.testcases.BookingFlow@4310d43]" started-at="2021-08-11T21:00:07 IST" name="checkNavigationAllCountries" data-provider="getCountriesMap" finished-at="2021-08-11T21:00:08 IST" duration-ms="785" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Philadelphia]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNavigationAllCountries -->
+        <test-method signature="checkNavigationAllCountries(java.lang.String,java.lang.String)[pri:5, instance:blazedemo.blazedemo.v1.testcases.BookingFlow@4310d43]" started-at="2021-08-11T21:00:08 IST" name="checkNavigationAllCountries" data-provider="getCountriesMap" finished-at="2021-08-11T21:00:09 IST" duration-ms="1050" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Boston]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[London]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNavigationAllCountries -->
+        <test-method signature="checkNavigationAllCountries(java.lang.String,java.lang.String)[pri:5, instance:blazedemo.blazedemo.v1.testcases.BookingFlow@4310d43]" started-at="2021-08-11T21:00:09 IST" name="checkNavigationAllCountries" data-provider="getCountriesMap" finished-at="2021-08-11T21:00:10 IST" duration-ms="794" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Portland]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Berlin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNavigationAllCountries -->
+        <test-method signature="checkNavigationAllCountries(java.lang.String,java.lang.String)[pri:5, instance:blazedemo.blazedemo.v1.testcases.BookingFlow@4310d43]" started-at="2021-08-11T21:00:10 IST" name="checkNavigationAllCountries" data-provider="getCountriesMap" finished-at="2021-08-11T21:00:11 IST" duration-ms="816" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[San Diego]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New York]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNavigationAllCountries -->
+        <test-method signature="checkNavigationAllCountries(java.lang.String,java.lang.String)[pri:5, instance:blazedemo.blazedemo.v1.testcases.BookingFlow@4310d43]" started-at="2021-08-11T21:00:11 IST" name="checkNavigationAllCountries" data-provider="getCountriesMap" finished-at="2021-08-11T21:00:11 IST" duration-ms="885" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mexico City]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dublin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNavigationAllCountries -->
+        <test-method signature="checkNavigationAllCountries(java.lang.String,java.lang.String)[pri:5, instance:blazedemo.blazedemo.v1.testcases.BookingFlow@4310d43]" started-at="2021-08-11T21:00:11 IST" name="checkNavigationAllCountries" data-provider="getCountriesMap" finished-at="2021-08-11T21:00:12 IST" duration-ms="866" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[São Paolo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cairo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNavigationAllCountries -->
+        <test-method signature="checkNaviPurchasePageOnAllFlights(java.lang.String)[pri:6, instance:blazedemo.blazedemo.v1.testcases.BookingFlow@4310d43]" started-at="2021-08-11T21:00:12 IST" name="checkNaviPurchasePageOnAllFlights" data-provider="getAirlines" finished-at="2021-08-11T21:00:25 IST" duration-ms="12158" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Virgin America]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNaviPurchasePageOnAllFlights -->
+        <test-method signature="checkNaviPurchasePageOnAllFlights(java.lang.String)[pri:6, instance:blazedemo.blazedemo.v1.testcases.BookingFlow@4310d43]" started-at="2021-08-11T21:00:25 IST" name="checkNaviPurchasePageOnAllFlights" data-provider="getAirlines" finished-at="2021-08-11T21:00:37 IST" duration-ms="12780" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[United Airlines]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNaviPurchasePageOnAllFlights -->
+        <test-method signature="checkNaviPurchasePageOnAllFlights(java.lang.String)[pri:6, instance:blazedemo.blazedemo.v1.testcases.BookingFlow@4310d43]" started-at="2021-08-11T21:00:37 IST" name="checkNaviPurchasePageOnAllFlights" data-provider="getAirlines" finished-at="2021-08-11T21:00:49 IST" duration-ms="11921" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Aer Lingus]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNaviPurchasePageOnAllFlights -->
+        <test-method signature="checkNaviPurchasePageOnAllFlights(java.lang.String)[pri:6, instance:blazedemo.blazedemo.v1.testcases.BookingFlow@4310d43]" started-at="2021-08-11T21:00:49 IST" name="checkNaviPurchasePageOnAllFlights" data-provider="getAirlines" finished-at="2021-08-11T21:01:01 IST" duration-ms="11989" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lufthansa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNaviPurchasePageOnAllFlights -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:blazedemo.blazedemo.v1.testcases.BookingFlow@4310d43]" started-at="2021-08-11T21:01:01 IST" name="tearDown" finished-at="2021-08-11T21:01:02 IST" duration-ms="759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- blazedemo.blazedemo.v1.testcases.BookingFlow -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

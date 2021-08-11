@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+<parameter name="browsertype" value="chrome">
+  <test thread-count="5" name="Test" preserve-order="true">
+    <classes>
+      
+      <class name="blazedemo.blazedemo.v1.testcases.BookingFlow"/>
+      <class name="blazedemo.blazedemo.v1.testcases.FunctionalTests"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  </parameter>
+</suite> <!-- Suite -->

@@ -1,0 +1,9 @@
+blazedemo\blazedemo\v1\testcases\FunctionalTests.class
+blazedemo\blazedemo\v1\pages\PurchasePage.class
+blazedemo\blazedemo\v1\testcases\BaseClass.class
+blazedemo\blazedemo\v1\pages\HomePage.class
+blazedemo\blazedemo\v1\testcases\BookingFlow.class
+blazedemo\blazedemo\v1\utilities\ReadCofiguration.class
+blazedemo\blazedemo\v1\utilities\Screenshot.class
+blazedemo\blazedemo\v1\pages\ConfirmationPage.class
+blazedemo\blazedemo\v1\pages\ReservationPage.class
