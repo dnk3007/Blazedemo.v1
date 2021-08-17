@@ -38,12 +38,13 @@ public class BaseClass {
 	public HomePage page;
 	public ReservationPage rpage;
 	public PurchasePage ppage;
+	
 
 	Screenshot screen;
 
 	@Parameters("browsertype")
 	@BeforeClass
-	public void setUp() {
+	public void setUp(String browser) {
 		PropertyConfigurator.configure("log4j.properties");
 		sassert = new SoftAssert();
 		log = Logger.getLogger(BaseClass.class.getName());
@@ -52,7 +53,6 @@ public class BaseClass {
 		page = new HomePage(driver);
 		rpage = new ReservationPage(driver);
 		ppage = new PurchasePage(driver);
-		String browser = "chrome";
 
 		if (browser.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", config.getChromepath());
