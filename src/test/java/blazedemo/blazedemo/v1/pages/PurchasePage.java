@@ -1,6 +1,5 @@
 package blazedemo.blazedemo.v1.pages;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -12,7 +11,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 
 public class PurchasePage {
 	WebDriver driver;
@@ -20,7 +18,7 @@ public class PurchasePage {
 	public PurchasePage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		
+
 	}
 
 	@FindBy(id = "inputName")
@@ -63,7 +61,20 @@ public class PurchasePage {
 	@CacheLookup
 	WebElement submitPurchase;
 
-	public void navigateToConfirmationPage(HashMap customerDetails) {
+	@FindBy(xpath = "//form[@name='VA43']//parent::tr//td[6]")
+	WebElement expprice;
+
+	@FindBy(xpath = "//p[contains(text(),'Price')]")
+	WebElement actualPrice;
+
+	/**
+	 * 
+	 * Method to fill the customer details
+	 * 
+	 * @param customerDetails
+	 */
+	public void navigateToConfirmationPage(Object map) {
+		HashMap<String, String> customerDetails = (HashMap<String, String>) map;
 		Iterator<Entry<String, String>> it = customerDetails.entrySet().iterator();
 		while (it.hasNext()) {
 			Map.Entry<String, String> set = (Map.Entry<String, String>) it.next();
@@ -82,19 +93,35 @@ public class PurchasePage {
 		submitPurchase.click();
 
 	}
-	
+
+	/**
+	 * Method to check all the page elements
+	 * 
+	 * @return
+	 */
 	public boolean checkPageElements() {
-		return (name.isDisplayed()
-				&& address.isDisplayed()
-				&& state.isDisplayed()
-				&& zipCode.isDisplayed()
-				&& cardType.isDisplayed()
-				&& creditCardMonth.isDisplayed()
-				&& creditCardNumber.isDisplayed()
-				&& creditCardYear.isDisplayed()
-				&& nameOnCard.isDisplayed()
-				&& submitPurchase.isDisplayed()
+		return (name.isDisplayed() && address.isDisplayed() && state.isDisplayed() && zipCode.isDisplayed()
+				&& cardType.isDisplayed() && creditCardMonth.isDisplayed() && creditCardNumber.isDisplayed()
+				&& creditCardYear.isDisplayed() && nameOnCard.isDisplayed() && submitPurchase.isDisplayed()
 				&& submitPurchase.isEnabled());
+	}
+
+	/**
+	 * Method to get the expected price
+	 * 
+	 * @return
+	 */
+	public String getExpectedPrice() {
+		return expprice.getText().substring(1);
+	}
+
+	/**
+	 * Method to get the actual price
+	 * 
+	 * @return
+	 */
+	public String getActualPrice() {
+		return actualPrice.getText().split(":")[1];
 	}
 
 }

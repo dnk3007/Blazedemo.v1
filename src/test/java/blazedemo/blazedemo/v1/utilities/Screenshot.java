@@ -12,9 +12,19 @@ public class Screenshot {
 
 	static WebDriver driver;
 
-	public static void takeScreenshot(String file) throws IOException {
+	/**
+	 * Capture screen shot and copy to the file
+	 * 
+	 * @param file
+	 */
+	public static void takeScreenshot(String file) {
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File("./screenshots/" + file + ".png"));
+		try {
+			FileUtils.copyFile(src, new File("./screenshots/" + file + ".png"));
+		} catch (IOException e) {
+
+			e.printStackTrace();
+		}
 
 	}
 }

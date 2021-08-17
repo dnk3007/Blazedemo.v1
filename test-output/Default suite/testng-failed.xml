@@ -3,16 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="blazedemo.blazedemo.v1.testcases.BookingFlow">
+      <class name="blazedemo.blazedemo.v1.testcases.HomePageTest">
         <methods>
+          <include name="verifyPageUI"/>
+          <include name="launchBaseUrl"/>
           <include name="initPage"/>
-          <include name="checkNaviPurchasePageOnAllFlights" invocation-numbers="0 1 2 3"/>
-          <include name="init"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="startReport"/>
         </methods>
-      </class> <!-- blazedemo.blazedemo.v1.testcases.BookingFlow -->
+      </class> <!-- blazedemo.blazedemo.v1.testcases.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
